@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Alinhamento em Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            /* Alinhamento padrão */
+            text-align: center;      
+            vertical-align: middle;  
+        }
+
+        .direita {
+            text-align: right;
+        }
+        .esquerda {
+            text-align: left;
+        }
+        
+        .topo {
+            vertical-align: top;
+        }
+
+        .baixo{
+            vertical-align:bottom ;
+        }
+
+        tr.altura {
+            height: 100px;
+        }
+        
+        
+        
+
+        
+        /* 
+        ================================
+        TAREFA 1: ALINHAMENTO HORIZONTAL
+        - Crie uma classe .direita para alinhar o texto à direita
+        - Crie uma classe .esquerda para alinhar o texto à esquerda
+        - Aplique essas classes em células diferentes
+        ================================
+        */
+
+        /* 
+        ================================
+        TAREFA 2: ALINHAMENTO VERTICAL
+        - Crie uma classe .topo para alinhar o texto no topo
+        - Crie uma classe .baixo para alinhar o texto na parte de baixo
+        - Aplique em células da segunda e terceira linha
+        ================================
+        */
+
+        /* 
+        ================================
+        TAREFA 3: DESAFIO EXTRA
+        - Aumente a altura de uma das linhas da tabela (ex: height: 100px;)
+        - Coloque um número em uma célula e alinhe-o à direita
+        ================================
+        */
+    </style>
+</head>
+<body>
+    <h1>Exercício - Trabalhando com alinhamento</h1>
+    
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td class="esquerda">A1 <br>(esquerda) <br></td>
+            <td>B1 <br> (padrão centro)</td>
+            <td class="direita">C1 <br> (direita) <br></td>
+        </tr>
+        <tr> <!-- Segunda linha -->
+            <td class="topo">A2 <br>(topo)</td>
+            <td>B2 <br>(padrão)</td>
+            <td class="baixo">C2 <br>(baixo)</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td class="topo">A3 <br>(topo)</td>
+            <td class="baixo">B3 <br> (baixo)</td>
+            <td>C3 <br>(padrão)</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td class="direita">1000 <br>(número à direita)</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
